@@ -46,7 +46,7 @@ public class LoaiGameController {
                 new ResponseEntity<>("Mã loại game " + maLoai +" delete status: " + loaiGame, HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
     @GetMapping("/filter")
     public ResponseEntity<?> filter(@RequestParam String maLoai,
                                     @RequestParam String tenLoai,
@@ -59,7 +59,7 @@ public class LoaiGameController {
                 HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
     @GetMapping("/getOne")
     public ResponseEntity<?> getOne(@RequestParam String maLoai,
                                     @RequestParam String tenLoai,

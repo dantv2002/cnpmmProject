@@ -68,6 +68,8 @@ public class GameServiceImpl implements GameService{
         GameEntity game = gameRepository.findByMaGameAndTrangThai(dto.getMaGame().trim(), true)
                 .orElseThrow(() -> new NotFoundException(String
                         .format("Mã game %s không tồn tại hoặc đã bị xóa", dto.getMaGame().trim())));
+        if(!principal.getName().equals(game.getCreatedBy()))
+            throw new InvalidException("Chỉ có người tạo mới có thể chỉnh sửa");
         game.setTenGame(dto.getTenGame());
         game.setMoTa(dto.getMoTa());
         game.setGia(dto.getGia());
@@ -82,6 +84,8 @@ public class GameServiceImpl implements GameService{
         GameEntity game = gameRepository.findByMaGameAndTrangThai(maGame.trim(), true)
                 .orElseThrow(() -> new NotFoundException(String
                         .format("Mã game %s không tồn tại hoặc đã bị xóa", maGame.trim())));
+        if(!principal.getName().equals(game.getCreatedBy()))
+            throw new InvalidException("Chỉ có người tạo mới có thể xóa");
         game.setTrangThai(false);
         gameRepository.save(game);
         return true;
@@ -98,5 +102,15 @@ public class GameServiceImpl implements GameService{
             throw new NotFoundException("Không tìm thấy thông tin như yêu cầu!");
         }
         return pageGame;
+    }
+
+    @Override
+    public boolean deleteByAdmin(String maGame, Principal principal) {
+        GameEntity game = gameRepository.findByMaGameAndTrangThai(maGame.trim(), true)
+                .orElseThrow(() -> new NotFoundException(String
+                        .format("Mã game %s không tồn tại hoặc đã bị xóa", maGame.trim())));
+        game.setTrangThai(false);
+        gameRepository.save(game);
+        return true;
     }
 }

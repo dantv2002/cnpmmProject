@@ -1,0 +1,183 @@
+[{
+  "_id": {
+    "$oid": "64672e1de659c7444e3caf30"
+  },
+  "email": "tvd1@gmail.com",
+  "name": "tvd1",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER",
+    "ROLE_ADMIN"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-19T08:06:53.848Z"
+  },
+  "lastModifiedBy": "anonymousUser",
+  "lastModifiedDate": {
+    "$date": "2023-05-19T08:06:53.848Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.User"
+},{
+  "_id": {
+    "$oid": "64672f3578c0ad7fb4e8cda3"
+  },
+  "email": "newuser1@gmail.com",
+  "name": "newuser1",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-19T08:11:33.654Z"
+  },
+  "lastModifiedBy": "tvd1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-19T11:50:55.811Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.User"
+},{
+  "_id": {
+    "$oid": "646766da3311877309e6f1e5"
+  },
+  "email": "newuser2@gmail.com",
+  "name": "newuser2",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-19T12:08:58.728Z"
+  },
+  "lastModifiedBy": "anonymousUser",
+  "lastModifiedDate": {
+    "$date": "2023-05-19T12:08:58.728Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.User"
+},{
+  "_id": {
+    "$oid": "646766e23311877309e6f1e6"
+  },
+  "email": "newuser3@gmail.com",
+  "name": "newuser3",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-19T12:09:06.597Z"
+  },
+  "lastModifiedBy": "anonymousUser",
+  "lastModifiedDate": {
+    "$date": "2023-05-19T12:09:06.597Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.User"
+},{
+  "_id": {
+    "$oid": "646766ea3311877309e6f1e7"
+  },
+  "email": "newuser4@gmail.com",
+  "name": "newuser4",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-19T12:09:14.295Z"
+  },
+  "lastModifiedBy": "anonymousUser",
+  "lastModifiedDate": {
+    "$date": "2023-05-19T12:09:14.295Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.User"
+},{
+  "_id": {
+    "$oid": "646766f33311877309e6f1e8"
+  },
+  "email": "newuser5@gmail.com",
+  "name": "newuser5",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-19T12:09:23.896Z"
+  },
+  "lastModifiedBy": "anonymousUser",
+  "lastModifiedDate": {
+    "$date": "2023-05-19T12:09:23.896Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.User"
+},{
+  "_id": {
+    "$oid": "646767163311877309e6f1e9"
+  },
+  "email": "test1@gmail.com",
+  "name": "test1",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-19T12:09:58.767Z"
+  },
+  "lastModifiedBy": "anonymousUser",
+  "lastModifiedDate": {
+    "$date": "2023-05-19T12:09:58.767Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.User"
+},{
+  "_id": {
+    "$oid": "6467671e3311877309e6f1ea"
+  },
+  "email": "test2@gmail.com",
+  "name": "test2",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-19T12:10:06.744Z"
+  },
+  "lastModifiedBy": "anonymousUser",
+  "lastModifiedDate": {
+    "$date": "2023-05-19T12:10:06.744Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.User"
+},{
+  "_id": {
+    "$oid": "6469d30f4c95910a778debf1"
+  },
+  "email": "admin1@gmail.com",
+  "name": "admin1",
+  "password": "123456",
+  "roles": [
+    "ROLE_USER",
+    "ROLE_ADMIN"
+  ],
+  "trangThai": true,
+  "createdBy": "anonymousUser",
+  "createdDate": {
+    "$date": "2023-05-21T08:15:11.241Z"
+  },
+  "lastModifiedBy": "anonymousUser",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T08:15:11.241Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.UserEntity"
+}]

@@ -1,0 +1,852 @@
+{
+	"info": {
+		"_postman_id": "ace90198-0370-4e3a-9368-21bf3936f99f",
+		"name": "finalProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24201154"
+	},
+	"item": [
+		{
+			"name": "authentication",
+			"item": [
+				{
+					"name": "login admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"tvd1@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"newuser1@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"newuser1@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"name\": \"newuser1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testToken",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyMUBnbWFpbC5jb20iLCJpYXQiOjE2ODQ0ODQxNjksImV4cCI6MTY4NDUwMjE2OX0.WazFVYYWP65uEXa8QbStI2R2zghQBINt10n0razyt6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "update name",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyMUBnbWFpbC5jb20iLCJpYXQiOjE2ODQ0ODgyNjIsImV4cCI6MTY4NDUwNjI2Mn0.DBd5Mxg-G2CabhDvP1peDw5WZbi55Z3UTVGCCqTNz4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"name\": \"newuser1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/updateName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"updateName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyMUBnbWFpbC5jb20iLCJpYXQiOjE2ODQ0ODgyNjIsImV4cCI6MTY4NDUwNjI2Mn0.DBd5Mxg-G2CabhDvP1peDw5WZbi55Z3UTVGCCqTNz4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/updatePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"updatePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete current user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyMUBnbWFpbC5jb20iLCJpYXQiOjE2ODQ0ODgyNjIsImV4cCI6MTY4NDUwNjI2Mn0.DBd5Mxg-G2CabhDvP1peDw5WZbi55Z3UTVGCCqTNz4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user by admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dmQxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDQ5NjcyMCwiZXhwIjoxNjg0NTE0NzIwfQ.RzWOJbboQ4w1osJXuVhDDWtvGr0KbLs4ddQB5t1DHC0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/adminDelete/newuser1@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"adminDelete",
+								"newuser1@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin search user by name or email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dmQxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDQ5NjcyMCwiZXhwIjoxNjg0NTE0NzIwfQ.RzWOJbboQ4w1osJXuVhDDWtvGr0KbLs4ddQB5t1DHC0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/filter?search=user&page=0&size=3&column=name&sort=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "user"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "3"
+								},
+								{
+									"key": "column",
+									"value": "name"
+								},
+								{
+									"key": "sort",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LoaiGame",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dmQxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDY1NjE4NCwiZXhwIjoxNjg0Njc0MTg0fQ.RgxjAKVPl7ELQQt-mrwoN2QoOdOdCgzs85_aWaU6n9Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"maLoai\":\"loaiGame6\",\r\n    \"tenLoai\":\"Bắn súng\",\r\n    \"moTa\":\"Thể loại Bắn súng\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/loai-game",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"loai-game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter use maLoai or tenLoai or moTa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dmQxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDY1NjE4NCwiZXhwIjoxNjg0Njc0MTg0fQ.RgxjAKVPl7ELQQt-mrwoN2QoOdOdCgzs85_aWaU6n9Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/loai-game/filter?maLoai=loaiGame&tenLoai=&moTa=hành động&page=0&size=4&column=maLoai&sort=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"loai-game",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "maLoai",
+									"value": "loaiGame"
+								},
+								{
+									"key": "tenLoai",
+									"value": ""
+								},
+								{
+									"key": "moTa",
+									"value": "hành động"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "4"
+								},
+								{
+									"key": "column",
+									"value": "maLoai"
+								},
+								{
+									"key": "sort",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOne use maLoai or tenLoai or moTa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dmQxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDY1NjE4NCwiZXhwIjoxNjg0Njc0MTg0fQ.RgxjAKVPl7ELQQt-mrwoN2QoOdOdCgzs85_aWaU6n9Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/loai-game/getOne?maLoai=loaiGame&tenLoai=&moTa=hành động",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"loai-game",
+								"getOne"
+							],
+							"query": [
+								{
+									"key": "maLoai",
+									"value": "loaiGame"
+								},
+								{
+									"key": "tenLoai",
+									"value": ""
+								},
+								{
+									"key": "moTa",
+									"value": "hành động"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update by maLoai",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dmQxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDY1NjE4NCwiZXhwIjoxNjg0Njc0MTg0fQ.RgxjAKVPl7ELQQt-mrwoN2QoOdOdCgzs85_aWaU6n9Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"maLoai\":\"loaiGame6\",\r\n    \"tenLoai\":\"Bắn súng 1\",\r\n    \"moTa\":\"Thể loại Bắn súng\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/loai-game",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"loai-game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete by maLoai",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dmQxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDY1NjE4NCwiZXhwIjoxNjg0Njc0MTg0fQ.RgxjAKVPl7ELQQt-mrwoN2QoOdOdCgzs85_aWaU6n9Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/loai-game/loaiGame6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"loai-game",
+								"loaiGame6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Game",
+			"item": [
+				{
+					"name": "create new game",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyMUBnbWFpbC5jb20iLCJpYXQiOjE2ODQ2NjU2NzksImV4cCI6MTY4NDY4MzY3OX0.k_gr-6EjsBCx1N8eCHWqBVJLTO2D5xEz1u0lYh00Ml8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"maGame\":\"game5\",\r\n    \"tenGame\":\"Tên game5\",\r\n    \"moTa\":\"Mô tả game5\",\r\n    \"gia\":1.0,\r\n    \"maLoais\": [\"loaiGame1\", \"loaiGame4\"],\r\n    \"thietBis\": [\"Android\"]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/game",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update game by maGame",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyMUBnbWFpbC5jb20iLCJpYXQiOjE2ODQ3MDg2MDUsImV4cCI6MTY4NDcyNjYwNX0.78IbZclGo0sCiAcAyDaMVjD0gSHvYRE9kcAa0ZccuV8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"maGame\":\"game5\",\r\n    \"tenGame\":\"Tên game5\",\r\n    \"moTa\":\"Mô tả game5\",\r\n    \"gia\":1.0,\r\n    \"maLoais\": [\"loaiGame1\", \"loaiGame4\"],\r\n    \"thietBis\": [\"Android\"]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/game",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete game by maGame",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyMUBnbWFpbC5jb20iLCJpYXQiOjE2ODQ3MDg4NDAsImV4cCI6MTY4NDcyNjg0MH0.0JwhU5DR-zhfQMj0tDA-H7PUd8PbKaImakEgi9Jnpd4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/game/game5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"game",
+								"game5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete game by admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0dmQxQGdtYWlsLmNvbSIsImlhdCI6MTY4NDcwOTMzMiwiZXhwIjoxNjg0NzI3MzMyfQ.Ik0pCEVU-TsdzHuoNoBBV_6n_d6W2lOIRs72fKQz41g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/game/admin/game5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"game",
+								"admin",
+								"game5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter game by some attribute",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyMUBnbWFpbC5jb20iLCJpYXQiOjE2ODQ2NjU2NzksImV4cCI6MTY4NDY4MzY3OX0.k_gr-6EjsBCx1N8eCHWqBVJLTO2D5xEz1u0lYh00Ml8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/game/filter?maGame=&tenGame=game1&moTa=&gia=0.0&page=0&size=4&column=maGame&sort=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"game",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "maGame",
+									"value": ""
+								},
+								{
+									"key": "tenGame",
+									"value": "game1"
+								},
+								{
+									"key": "moTa",
+									"value": ""
+								},
+								{
+									"key": "gia",
+									"value": "0.0"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "4"
+								},
+								{
+									"key": "column",
+									"value": "maGame"
+								},
+								{
+									"key": "sort",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

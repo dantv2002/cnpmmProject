@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "6469d17e4c95910a778debeb"
+  },
+  "maLoai": "loaiGame1",
+  "tenLoai": "Hành động",
+  "moTa": "Thể loại hành động",
+  "trangThai": true,
+  "createdBy": "tvd1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T08:08:30.527Z"
+  },
+  "lastModifiedBy": "tvd1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T08:08:30.527Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.LoaiGameEntity"
+},{
+  "_id": {
+    "$oid": "6469d25c4c95910a778debec"
+  },
+  "maLoai": "loaiGame2",
+  "tenLoai": "Phiêu lưu",
+  "moTa": "Thể loại phiêu lưu",
+  "trangThai": true,
+  "createdBy": "tvd1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T08:12:12.309Z"
+  },
+  "lastModifiedBy": "tvd1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T08:12:12.309Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.LoaiGameEntity"
+},{
+  "_id": {
+    "$oid": "6469d2784c95910a778debed"
+  },
+  "maLoai": "loaiGame3",
+  "tenLoai": "Kinh dị",
+  "moTa": "Thể loại kinh dị",
+  "trangThai": true,
+  "createdBy": "tvd1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T08:12:40.478Z"
+  },
+  "lastModifiedBy": "tvd1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T08:12:40.478Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.LoaiGameEntity"
+},{
+  "_id": {
+    "$oid": "6469d2974c95910a778debee"
+  },
+  "maLoai": "loaiGame4",
+  "tenLoai": "Thám hiểm",
+  "moTa": "Thể loại Thám hiểm",
+  "trangThai": true,
+  "createdBy": "tvd1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T08:13:11.253Z"
+  },
+  "lastModifiedBy": "tvd1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T08:13:11.253Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.LoaiGameEntity"
+},{
+  "_id": {
+    "$oid": "6469d2ac4c95910a778debef"
+  },
+  "maLoai": "loaiGame5",
+  "tenLoai": "Xây nhà",
+  "moTa": "Thể loại Xây nhà",
+  "trangThai": true,
+  "createdBy": "tvd1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T08:13:32.183Z"
+  },
+  "lastModifiedBy": "tvd1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T08:13:32.183Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.LoaiGameEntity"
+},{
+  "_id": {
+    "$oid": "6469d2ba4c95910a778debf0"
+  },
+  "maLoai": "loaiGame6",
+  "tenLoai": "Bắn súng 1",
+  "moTa": "Thể loại Bắn súng",
+  "trangThai": true,
+  "createdBy": "tvd1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T08:13:46.892Z"
+  },
+  "lastModifiedBy": "tvd1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T08:38:45.047Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.LoaiGameEntity"
+}]

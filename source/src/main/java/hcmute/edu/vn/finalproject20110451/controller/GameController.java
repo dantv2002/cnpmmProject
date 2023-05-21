@@ -45,6 +45,14 @@ public class GameController {
                 new ResponseEntity<>("Mã game " + maGame +" delete status: " + game, HttpStatus.OK);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
+    @DeleteMapping("/admin/{maGame}")
+    public ResponseEntity<?> deleteByMaGameWithAdmindRole(@PathVariable String maGame, @Valid Principal principal) {
+        boolean game = gameService.deleteByAdmin(maGame, principal);
+        return
+                new ResponseEntity<>("Mã game " + maGame +" delete status: " + game + "by admin: "+principal.getName(), HttpStatus.OK);
+    }
+
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
     @GetMapping("/filter")
     public ResponseEntity<?> filter(@RequestParam String maGame,

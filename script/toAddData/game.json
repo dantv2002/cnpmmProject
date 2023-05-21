@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "6469f560dde8cd505d0ed066"
+  },
+  "maGame": "game1",
+  "tenGame": "Tên game1",
+  "moTa": "Mô tả game1",
+  "gia": 0,
+  "maLoais": [
+    "loaiGame1",
+    "loaiGame2"
+  ],
+  "thietBis": [
+    "Android"
+  ],
+  "trangThai": true,
+  "createdBy": "newuser1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T10:41:36.761Z"
+  },
+  "lastModifiedBy": "newuser1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T10:41:36.761Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.GameEntity"
+},{
+  "_id": {
+    "$oid": "6469f6de0f5b7133960aea13"
+  },
+  "maGame": "game2",
+  "tenGame": "Tên game2",
+  "moTa": "Mô tả game2",
+  "gia": 0,
+  "maLoais": [
+    "loaiGame1",
+    "loaiGame2"
+  ],
+  "thietBis": [
+    "Android"
+  ],
+  "trangThai": true,
+  "createdBy": "newuser1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T10:47:58.969Z"
+  },
+  "lastModifiedBy": "newuser1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T10:47:58.969Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.GameEntity"
+},{
+  "_id": {
+    "$oid": "6469f6f30f5b7133960aea14"
+  },
+  "maGame": "game3",
+  "tenGame": "Tên game3",
+  "moTa": "Mô tả game3",
+  "gia": 0,
+  "maLoais": [
+    "loaiGame1",
+    "loaiGame3"
+  ],
+  "thietBis": [
+    "Android"
+  ],
+  "trangThai": true,
+  "createdBy": "newuser1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T10:48:19.086Z"
+  },
+  "lastModifiedBy": "newuser1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T10:48:19.086Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.GameEntity"
+},{
+  "_id": {
+    "$oid": "6469f6ff0f5b7133960aea15"
+  },
+  "maGame": "game4",
+  "tenGame": "Tên game4",
+  "moTa": "Mô tả game4",
+  "gia": 0,
+  "maLoais": [
+    "loaiGame1",
+    "loaiGame4"
+  ],
+  "thietBis": [
+    "Android"
+  ],
+  "trangThai": true,
+  "createdBy": "newuser1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T10:48:31.027Z"
+  },
+  "lastModifiedBy": "newuser1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T10:48:31.027Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.GameEntity"
+},{
+  "_id": {
+    "$oid": "6469f72d0f5b7133960aea16"
+  },
+  "maGame": "game5",
+  "tenGame": "Tên game5",
+  "moTa": "Mô tả game5",
+  "gia": 1,
+  "maLoais": [
+    "loaiGame1",
+    "loaiGame4"
+  ],
+  "thietBis": [
+    "Android"
+  ],
+  "trangThai": true,
+  "createdBy": "newuser1@gmail.com",
+  "createdDate": {
+    "$date": "2023-05-21T10:49:17.757Z"
+  },
+  "lastModifiedBy": "tvd1@gmail.com",
+  "lastModifiedDate": {
+    "$date": "2023-05-21T22:49:08.287Z"
+  },
+  "_class": "hcmute.edu.vn.finalproject20110451.entity.GameEntity"
+}]
